@@ -1,6 +1,6 @@
 package com.example.testspringapp.controllers
 
-import com.example.testspringapp.entities.Knowledge
+import com.example.testspringapp.entities.Subjects
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -9,9 +9,9 @@ class CheckController {
 
     @GetMapping("/")
     fun getHomepage() = listOf(
-        Knowledge("Kotlin", "Success"),
-        Knowledge("C++", "In progress"),
-        Knowledge("Android SDK", "Success"),
-        Knowledge("Spring", "Just started"),
+        Subjects("Kotlin", "Success"),
+        Subjects("C++", "In progress"),
+        Subjects("Android SDK", "Success"),
+        Subjects("Spring", "Just started"),
     )
 }
